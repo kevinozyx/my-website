@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+p {
+  line-height: 2;
+}
+h1 {
+  margin: 50px auto 0;
+  font-size: 5.625rem;
+  /* 100% = 16px, 562.5% = 90px - dynamic*/
+  /* 1em = 16px, 5.625em = 90px - dynamic*/
+  /* downside with dynamic size, the attribute is inherited, i.e. if specified 100% in body, then it will multiply with whatever the size specified in its child */
+  /* but can use a 'root' dynamic, e.g. 2rem */
+  font-family: 'Sacramento', cursive;
+  color: #007580;
+}
+
+hr {
+  border: dotted grey 6px;
+  border-bottom: none;
+  width: 3%;
+  margin: 100px auto;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: #66BFBF;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+h6 {
+  font-weight: normal;
+  color: #c39e5c;
+}
+
+.top-container {
+  background-color: #E4F9F5;
+  position: relative;
+  /* keep this as relative so it doesnt affect the other element (divs) in the project */
+  /* if this is not declared, the "absolute" element will be relative to body */
+  padding-top: 100px;
+}
+
+
+.intro{
+  width: 30%;
+  margin: auto;
+}
+
+
+.subtitle {
+  font-weight: normal;
+}
+
+
+.middle-container {
+  background-color: #edffec;
+  padding: 20px;
+}
+
+.bottom-container {
+  background-color: #eaffd0;
+  padding: 50px 0 20px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 30px;
+}
+
+.bottom-cloud {
+  /* display: block; */
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.logo {
+  margin: auto 10px;
+  width: 2rem;
+  transition: transform .5s;
+}
+
+.logo:hover{
+  transform:scale(1.5);
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  /* position: relative;
+  left: 25%; */
+}
+
+.img-PP {
+  width: 15rem;
+  height: 15rem;
+}
+
+.html-skill {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.Python-skill {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.Contact-Me {
+margin: 20px auto;
+   background: #11CDD4;
+   background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -webkit-gradient(to bottom, #11CDD4, #11999E);
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   height: 0;
+   line-height: 0;
+   color: #FFFFFF;
+   font-family: 'Montserrat', sans-serif;
+   width: 175px;
+   font-size: 20px;
+   font-weight: 500;
+   padding: 23px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.Contact-Me:hover {
+   border: solid #2BC4AD 0;
+   background: #30E3CB;
+   background-image: -webkit-linear-gradient(top, #30E3CB, #3D94F6);
+   background-image: -moz-linear-gradient(top, #30E3CB, #3D94F6);
+   background-image: -ms-linear-gradient(top, #30E3CB, #3D94F6);
+   background-image: -o-linear-gradient(top, #30E3CB, #3D94F6);
+   background-image: -webkit-gradient(to bottom, #30E3CB, #3D94F6);
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   text-decoration: none;
+}
+
+/* .test1-desc{
+  clear: left;
+} */
+/* clear is anti-float */
+/* .skills{
+  position: relative;
+} */
+/* .mountain {
+  display: block;
+  position: absolute;
+} */
